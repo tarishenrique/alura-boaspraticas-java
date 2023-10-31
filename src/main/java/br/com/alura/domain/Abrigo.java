@@ -2,6 +2,11 @@ package br.com.alura.domain;
 
 public class Abrigo {
 	
+	private Long id;
+	private String nome;
+	private String telefone;
+	private String email;
+	
 	public Abrigo(String nome, String telefone, String email) {
 		super();
 		this.nome = nome;
@@ -13,9 +18,9 @@ public class Abrigo {
 		
 	}
 	
-	private String nome;
-	private String telefone;
-	private String email;
+	public Long getId() {
+		return id;
+	}
 	
 	public String getNome() {
 		return nome;
