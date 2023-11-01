@@ -6,6 +6,7 @@ public class Abrigo {
 	private String nome;
 	private String telefone;
 	private String email;
+	private Pet[] pets;
 	
 	public Abrigo(String nome, String telefone, String email) {
 		super();
@@ -39,6 +40,10 @@ public class Abrigo {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public Pet[] getPets() {
+		return pets;
 	}
 
 }
