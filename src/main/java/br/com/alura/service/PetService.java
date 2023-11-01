@@ -66,17 +66,18 @@ public class PetService {
         String line;
         while ((line = reader.readLine()) != null) {
             String[] campos = line.split(",");
-            String tipo = campos[0];
-            String nome = campos[1];
-            String raca = campos[2];
-            int idade = Integer.parseInt(campos[3]);
-            String cor = campos[4];
-            Float peso = Float.parseFloat(campos[5]);
+            String tipo = campos[0].trim();
+            String nome = campos[1].trim();
+            String raca = campos[2].trim();
+            int idade = Integer.parseInt(campos[3].trim());
+            String cor = campos[4].trim();
+            Float peso = Float.parseFloat(campos[5].trim());
 
             Pet pet = new Pet();
             pet.setTipo(tipo);
             pet.setNome(nome);
             pet.setRaca(raca);
+            pet.setIdade(idade);
             pet.setCor(cor);
             pet.setPeso(peso);
 
